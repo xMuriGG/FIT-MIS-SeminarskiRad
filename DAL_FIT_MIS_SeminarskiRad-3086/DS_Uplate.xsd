@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Uplate" targetNamespace="http://tempuri.org/DS_Uplate.xsd" xmlns:mstns="http://tempuri.org/DS_Uplate.xsd" xmlns="http://tempuri.org/DS_Uplate.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MIS_CentarZaEdukacijuConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MIS_CentarZaEdukacijuConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DAL_FIT_MIS_SeminarskiRad_3086.Properties.Settings.GlobalReference.Default.MIS_CentarZaEdukacijuConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_UplateTableAdapter" GeneratorDataComponentClassName="view_UplateTableAdapter" Name="view_Uplate" UserDataComponentName="view_UplateTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MIS_CentarZaEdukacijuConnectionString (Settings)" DbObjectName="MIS_CentarZaEdukaciju.dbo.view_Uplate" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TrainingTypeID, Kurs, TrainingSubTypeID, Name, TrainingID, PaymentID, ParticipantID, Amount, Notes, PaymentState, CheckGiven, PaymentDate, FirstName, LastName, Email FROM dbo.view_Uplate</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TrainingTypeID" DataSetColumn="TrainingTypeID" />
+              <Mapping SourceColumn="Kurs" DataSetColumn="Kurs" />
+              <Mapping SourceColumn="TrainingSubTypeID" DataSetColumn="TrainingSubTypeID" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="TrainingID" DataSetColumn="TrainingID" />
+              <Mapping SourceColumn="PaymentID" DataSetColumn="PaymentID" />
+              <Mapping SourceColumn="ParticipantID" DataSetColumn="ParticipantID" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="Notes" DataSetColumn="Notes" />
+              <Mapping SourceColumn="PaymentState" DataSetColumn="PaymentState" />
+              <Mapping SourceColumn="CheckGiven" DataSetColumn="CheckGiven" />
+              <Mapping SourceColumn="PaymentDate" DataSetColumn="PaymentDate" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Uplate" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Uplate" msprop:Generator_UserDSName="DS_Uplate">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_Uplate" msprop:Generator_TableClassName="view_UplateDataTable" msprop:Generator_TableVarName="tableview_Uplate" msprop:Generator_RowChangedName="view_UplateRowChanged" msprop:Generator_TablePropName="view_Uplate" msprop:Generator_RowDeletingName="view_UplateRowDeleting" msprop:Generator_RowChangingName="view_UplateRowChanging" msprop:Generator_RowEvHandlerName="view_UplateRowChangeEventHandler" msprop:Generator_RowDeletedName="view_UplateRowDeleted" msprop:Generator_RowClassName="view_UplateRow" msprop:Generator_UserTableName="view_Uplate" msprop:Generator_RowEvArgName="view_UplateRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TrainingTypeID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="TrainingTypeID" msprop:Generator_ColumnVarNameInTable="columnTrainingTypeID" msprop:Generator_ColumnPropNameInTable="TrainingTypeIDColumn" msprop:Generator_UserColumnName="TrainingTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="Kurs" msprop:nullValue=" " msprop:Generator_ColumnPropNameInRow="Kurs" msprop:Generator_ColumnVarNameInTable="columnKurs" msprop:Generator_ColumnPropNameInTable="KursColumn" msprop:Generator_UserColumnName="Kurs" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TrainingSubTypeID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="TrainingSubTypeID" msprop:Generator_ColumnVarNameInTable="columnTrainingSubTypeID" msprop:Generator_ColumnPropNameInTable="TrainingSubTypeIDColumn" msprop:Generator_UserColumnName="TrainingSubTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TrainingID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="TrainingID" msprop:Generator_ColumnVarNameInTable="columnTrainingID" msprop:Generator_ColumnPropNameInTable="TrainingIDColumn" msprop:Generator_UserColumnName="TrainingID" type="xs:int" minOccurs="0" />
+              <xs:element name="PaymentID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="PaymentID" msprop:Generator_ColumnVarNameInTable="columnPaymentID" msprop:Generator_ColumnPropNameInTable="PaymentIDColumn" msprop:Generator_UserColumnName="PaymentID" type="xs:int" minOccurs="0" />
+              <xs:element name="ParticipantID" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="ParticipantID" msprop:Generator_ColumnVarNameInTable="columnParticipantID" msprop:Generator_ColumnPropNameInTable="ParticipantIDColumn" msprop:Generator_UserColumnName="ParticipantID" type="xs:int" minOccurs="0" />
+              <xs:element name="Amount" msprop:nullValue="0.0" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Notes" msprop:nullValue=" " msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentState" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="PaymentState" msprop:Generator_ColumnVarNameInTable="columnPaymentState" msprop:Generator_ColumnPropNameInTable="PaymentStateColumn" msprop:Generator_UserColumnName="PaymentState" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CheckGiven" msprop:nullValue="false" msprop:Generator_ColumnPropNameInRow="CheckGiven" msprop:Generator_ColumnVarNameInTable="columnCheckGiven" msprop:Generator_ColumnPropNameInTable="CheckGivenColumn" msprop:Generator_UserColumnName="CheckGiven" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PaymentDate" msprop:Generator_ColumnVarNameInTable="columnPaymentDate" msprop:Generator_ColumnPropNameInRow="PaymentDate" msprop:Generator_ColumnPropNameInTable="PaymentDateColumn" msprop:Generator_UserColumnName="PaymentDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FirstName" msprop:nullValue=" " msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LastName" msprop:nullValue=" " msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:nullValue=" " msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="statistika_Uplate_Matrix" msprop:Generator_TableClassName="statistika_Uplate_MatrixDataTable" msprop:Generator_TableVarName="tablestatistika_Uplate_Matrix" msprop:Generator_RowChangedName="statistika_Uplate_MatrixRowChanged" msprop:Generator_TablePropName="statistika_Uplate_Matrix" msprop:Generator_RowDeletingName="statistika_Uplate_MatrixRowDeleting" msprop:Generator_RowChangingName="statistika_Uplate_MatrixRowChanging" msprop:Generator_RowEvHandlerName="statistika_Uplate_MatrixRowChangeEventHandler" msprop:Generator_RowDeletedName="statistika_Uplate_MatrixRowDeleted" msprop:Generator_RowClassName="statistika_Uplate_MatrixRow" msprop:Generator_UserTableName="statistika_Uplate_Matrix" msprop:Generator_RowEvArgName="statistika_Uplate_MatrixRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_UserColumnName="Year" type="xs:int" minOccurs="0" />
+              <xs:element name="Month" msprop:Generator_ColumnVarNameInTable="columnMonth" msprop:Generator_ColumnPropNameInRow="Month" msprop:Generator_ColumnPropNameInTable="MonthColumn" msprop:Generator_UserColumnName="Month" type="xs:int" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Day" msprop:Generator_ColumnVarNameInTable="columnDay" msprop:Generator_ColumnPropNameInRow="Day" msprop:Generator_ColumnPropNameInTable="DayColumn" msprop:Generator_UserColumnName="Day" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D042DE11-2611-4157-9E38-726E215F503C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL_FIT_MIS_SeminarskiRad_3086</RootNamespace>
+    <AssemblyName>DAL_FIT_MIS_SeminarskiRad-3086</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DA_Certifikati.cs" />
+    <Compile Include="DA_Grupe.cs" />
+    <Compile Include="DA_Kandidati.cs" />
+    <Compile Include="DA_Training.cs" />
+    <Compile Include="DA_Uplate.cs" />
+    <Compile Include="DA_Zaposlenici.cs" />
+    <Compile Include="DS_Certifikati.cs">
+      <DependentUpon>DS_Certifikati.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Certifikati.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Certifikati.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GrupeKursevi.cs">
+      <DependentUpon>DS_GrupeKursevi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_GrupeKursevi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GrupeKursevi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_PretragaKandidata.cs">
+      <DependentUpon>DS_PretragaKandidata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_PretragaKandidata.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PretragaKandidata.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Uplate.cs">
+      <DependentUpon>DS_Uplate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Uplate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Uplate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Zaposlenici.cs">
+      <DependentUpon>DS_Zaposlenici.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Zaposlenici.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Zaposlenici.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DS_Certifikati.xsc">
+      <DependentUpon>DS_Certifikati.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Certifikati.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Certifikati.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Certifikati.xss">
+      <DependentUpon>DS_Certifikati.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GrupeKursevi.xsc">
+      <DependentUpon>DS_GrupeKursevi.xsd</DependentUpon>
+    </None>
+    <None Include="DS_GrupeKursevi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GrupeKursevi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_GrupeKursevi.xss">
+      <DependentUpon>DS_GrupeKursevi.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PretragaKandidata.xsc">
+      <DependentUpon>DS_PretragaKandidata.xsd</DependentUpon>
+    </None>
+    <None Include="DS_PretragaKandidata.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PretragaKandidata.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_PretragaKandidata.xss">
+      <DependentUpon>DS_PretragaKandidata.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Uplate.xsc">
+      <DependentUpon>DS_Uplate.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Uplate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Uplate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Uplate.xss">
+      <DependentUpon>DS_Uplate.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Zaposlenici.xsc">
+      <DependentUpon>DS_Zaposlenici.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Zaposlenici.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Zaposlenici.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Zaposlenici.xss">
+      <DependentUpon>DS_Zaposlenici.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\DS_GrupeKursevi.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

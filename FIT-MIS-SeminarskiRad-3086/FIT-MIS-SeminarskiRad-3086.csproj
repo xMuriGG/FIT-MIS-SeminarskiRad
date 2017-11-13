@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CB2005D-BFCF-46B7-BB6F-338826FA58B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FIT_MIS_SeminarskiRad_3086</RootNamespace>
+    <AssemblyName>FIT-MIS-SeminarskiRad-3086</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_PlateZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_PlateZaposlenika.Designer.cs">
+      <DependentUpon>frm_PlateZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_PretragaCertifikata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_PretragaCertifikata.Designer.cs">
+      <DependentUpon>frm_PretragaCertifikata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_PretragaKurseva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_PretragaKurseva.Designer.cs">
+      <DependentUpon>frm_PretragaKurseva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Uplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Uplate.Designer.cs">
+      <DependentUpon>frm_Uplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\frm_oKandidatu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_oKandidatu.Designer.cs">
+      <DependentUpon>frm_oKandidatu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_plateZaposlenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_plateZaposlenika.Designer.cs">
+      <DependentUpon>frm_plateZaposlenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_printanjeCertifikata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_printanjeCertifikata.Designer.cs">
+      <DependentUpon>frm_printanjeCertifikata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_reportUplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_reportUplate.Designer.cs">
+      <DependentUpon>frm_reportUplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_StatistikaPoslovanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_StatistikaPoslovanja.Designer.cs">
+      <DependentUpon>frm_StatistikaPoslovanja.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_PlateZaposlenika.resx">
+      <DependentUpon>frm_PlateZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_PretragaCertifikata.resx">
+      <DependentUpon>frm_PretragaCertifikata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_PretragaKurseva.resx">
+      <DependentUpon>frm_PretragaKurseva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Uplate.resx">
+      <DependentUpon>frm_Uplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\frm_oKandidatu.resx">
+      <DependentUpon>frm_oKandidatu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_plateZaposlenika.resx">
+      <DependentUpon>frm_plateZaposlenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_printanjeCertifikata.resx">
+      <DependentUpon>frm_printanjeCertifikata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_reportUplate.resx">
+      <DependentUpon>frm_reportUplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_StatistikaPoslovanja.resx">
+      <DependentUpon>frm_StatistikaPoslovanja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\report_ListaUplata.rdlc" />
+    <EmbeddedResource Include="Reports\report_oKandidatu.rdlc" />
+    <EmbeddedResource Include="Reports\report_PlateZaposlenika.rdlc" />
+    <EmbeddedResource Include="Reports\report_printanjeCertifikata.rdlc" />
+    <EmbeddedResource Include="Reports\report_statistikaUplate.rdlc" />
+    <EmbeddedResource Include="Reports\report_statistikaUplateChart.rdlc" />
+    <EmbeddedResource Include="Reports\report_statistikaUplateChartDays.rdlc" />
+    <EmbeddedResource Include="Reports\report_statistikaUplateChartMonths.rdlc" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_Certifikati+view_CertifikatiDataTable.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_GrupeKursevi+PohadjaniKurseviDataTable.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata+AddressDataTable.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata+AddressRow.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata+PhoneDataTable.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata+PhoneRow.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata+view_BrojTelefonaDataTable.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata+view_KandidatDataTable.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata+view_KandidatRow.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidata.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.AddressTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.TrainingGroupTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.TrainingSubTypeTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.TrainingTypeTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.view_BrojTelefonaTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.view_KandidatTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_PretragaKandidataTableAdapters.view_KurseviTableAdapter.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_Uplate+statistika_Uplate_MatrixDataTable.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_Uplate.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_Zaposlenici+EmployeePayHistoryDataTable.datasource" />
+    <None Include="Properties\DataSources\DAL_FIT_MIS_SeminarskiRad_3086.DS_Zaposlenici+view_ZaposleniciRow.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL_FIT_MIS_SeminarskiRad-3086\DAL_FIT_MIS_SeminarskiRad-3086.csproj">
+      <Project>{d042de11-2611-4157-9e38-726e215f503c}</Project>
+      <Name>DAL_FIT_MIS_SeminarskiRad-3086</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-ygg-report_E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M_Unfilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filterr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reviewList-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newReport-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
